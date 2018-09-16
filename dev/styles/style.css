@@ -1,4 +1,9 @@
 @import '../styles/fonts.css';
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'bananas' !important;
@@ -77,6 +82,119 @@ a {
 }
 p {
   font: 16px 'Intro Bold';
+}
+.container {
+  position: relative;
+  margin: 0 auto !important;
+  width: 1366px;
+}
+.main-slider {
+  width: 100%;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background: #000;
+}
+.main-slider__container {
+  width: 100%;
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-padding-start: 0;
+}
+.main-slider__container li {
+  width: 100%;
+}
+.main-slider__container li img {
+  margin: 0 auto;
+  margin-top: -200px;
+  display: block;
+}
+.main-slider__container__mask {
+  margin: 280px 0 0 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: #fff;
+}
+.main-slider__container__mask h2 {
+  font: 64px 'Intro Bold';
+  line-height: 83px;
+  text-transform: uppercase;
+}
+.main-slider__container__mask p {
+  font: 18px 'Graphik';
+  line-height: 34px;
+}
+.scroll-down {
+  right: 0;
+  height: 14px;
+  transform: rotate(-90deg);
+  position: absolute;
+}
+.scroll-down p {
+  float: left;
+  font: 14px 'Intro';
+  line-height: 16px;
+  color: #fff;
+}
+.scroll-down span {
+  margin: 8px 13px 0 0;
+  float: left;
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: #fff;
+}
+.scroll-down-container {
+  bottom: 0;
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}
+ul.rslides1_tabs {
+  position: absolute;
+  left: 16%;
+  margin: -30px 0 0 0;
+  width: 170px;
+  height: 6px;
+  z-index: 11;
+  list-style: none;
+}
+ul.rslides1_tabs li {
+  margin-right: 10px;
+  float: left;
+  width: 45px;
+  height: 6px;
+  background: #6e6d6d;
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+}
+ul.rslides1_tabs li a,
+ul.rslides1_tabs li a:hover {
+  display: block;
+  width: 45px;
+  height: 6px;
+  background: 0;
+  text-indent: -999999px;
+  overflow: hidden;
+}
+ul.rslides1_tabs .rslides_here {
+  float: left;
+}
+ul.rslides1_tabs .rslides_here a,
+ul.rslides1_tabs .rslides_here a:hover {
+  display: block;
+  width: 45px;
+  height: 6px;
+  background: #FFED00;
+  text-indent: -999999px;
+  overflow: hidden;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name

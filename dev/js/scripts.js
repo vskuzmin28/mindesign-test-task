@@ -9,3 +9,13 @@ $('.link-popup-call').click(function(e){
       positionStyle: 'fixed',
     })
 })
+
+// portfolio
+
+$('.main-slider__container').responsiveSlides({
+  auto: true,
+  pager: true,
+  nav: false,
+  speed: 500,
+  maxwidth: 4000,
+})
