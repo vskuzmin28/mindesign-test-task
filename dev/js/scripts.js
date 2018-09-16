@@ -17,5 +17,5 @@ $('.main-slider__container').responsiveSlides({
   pager: true,
   nav: false,
   speed: 500,
-  maxwidth: 4000,
+  maxwidth: 1366,
 })
