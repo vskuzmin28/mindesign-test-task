@@ -4,11 +4,106 @@
 
 // fonts & variables
 
+@import '../styles/fonts.css';
 @import '../styles/helpers/variables.less';
 @import '../styles/helpers/sprite.less';
-@import '../styles/fonts.css';
+
 
 // SETTINGS //
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '@{icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow {
+  &:before {
+    content: @icon-arrow;     
+    color: #fff;
+  }
+}
+.icon-events {
+  &:before {
+    content: @icon-events;     
+    color: #ffed00;
+  }
+}
+.icon-festivals {
+  &:before {
+    content: @icon-festivals;     
+    color: #ffed00;
+  }
+}
+.icon-foodtruck {
+  &:before {
+    content: @icon-foodtruck;     
+    color: #ffed00;
+  }
+}
+.icon-hospitality {
+  &:before {
+    content: @icon-hospitality;     
+    color: #ffed00;
+  }
+}
+.icon-instoreactivation {
+  &:before {
+    content: @icon-instoreactivation;     
+    color: #ffed00;
+  }
+}
+.icon-merchandising {
+  &:before {
+    content: @icon-merchandising;     
+    color: #ffed00;
+  }
+}
+.icon-mia {
+  &:before {
+    content: @icon-mia;     
+    color: #ffed00;
+  }
+}
+.icon-ontraid {
+  &:before {
+    content: @icon-ontraid;     
+    color: #ffed00;
+  }
+}
+.icon-photo-activation {
+  &:before {
+    content: @icon-photo-activation;     
+    color: #ffed00;
+  }
+}
+.icon-plus {
+  &:before {
+    content: @icon-plus;     
+    color: #ffed00;
+  }
+}
+.icon-popup {
+  &:before {
+    content: @icon-popup;     
+    color: #ffed00;
+  }
+}
+.icon-sampling {
+  &:before {
+    content: @icon-sampling;     
+    color: #ffed00;
+  }
+}
 
 // animation
 
@@ -25,6 +120,10 @@ body {
 
 a {
   cursor: pointer;
+}
+
+p {
+  font: 16px 'Intro Bold';
 }
 
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {

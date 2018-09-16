@@ -1,4 +1,69 @@
 @import '../styles/fonts.css';
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bananas' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrow:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-events:before {
+  content: "\e901";
+  color: #ffed00;
+}
+.icon-festivals:before {
+  content: "\e902";
+  color: #ffed00;
+}
+.icon-foodtruck:before {
+  content: "\e903";
+  color: #ffed00;
+}
+.icon-hospitality:before {
+  content: "\e904";
+  color: #ffed00;
+}
+.icon-instoreactivation:before {
+  content: "\e905";
+  color: #ffed00;
+}
+.icon-merchandising:before {
+  content: "\e906";
+  color: #ffed00;
+}
+.icon-mia:before {
+  content: "\e907";
+  color: #ffed00;
+}
+.icon-ontraid:before {
+  content: "\e908";
+  color: #ffed00;
+}
+.icon-photo-activation:before {
+  content: "\e909";
+  color: #ffed00;
+}
+.icon-plus:before {
+  content: "\e90a";
+  color: #ffed00;
+}
+.icon-popup:before {
+  content: "\e90b";
+  color: #ffed00;
+}
+.icon-sampling:before {
+  content: "\e90c";
+  color: #ffed00;
+}
 a,
 a:hover {
   transition: all 0.5s ease-in-out;
@@ -9,6 +74,9 @@ body {
 }
 a {
   cursor: pointer;
+}
+p {
+  font: 16px 'Intro Bold';
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
