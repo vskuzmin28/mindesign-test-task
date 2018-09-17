@@ -13,7 +13,7 @@
 // header
 
 $(window).scroll(function() {
-  if($(window).scrollTop() >= 120) {
+  if($(this).scrollTop() >= 120) {
 
     $('.header').addClass('header_fixed');
     $('.header__logo').addClass('header__logo-to-scroll');
@@ -36,6 +36,8 @@ $('.main-slider__container').responsiveSlides({
   maxwidth: 1366,
 })
 
+// services content
+
 $('.contentBig, .btn-close').hide();
 
 $('.more').click(function(){
@@ -48,3 +50,7 @@ $('.btn-close').click(function(e){
   $('.contentBig, .btn-close').hide('slow');
   $('.contentSmall').show('slow');
 })
+
+// init css animation from wow.js
+
+new WOW().init();
