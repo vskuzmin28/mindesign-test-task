@@ -4,9 +4,8 @@
     position: absolute;
     width: 100%;
     height: 80px;
-    background: #000;
+    //background: #000;
     z-index: 13;
-    //overflow: hidden;
 }
 
 // logo
@@ -26,20 +25,31 @@
     }
 }
 
+// logo
+
 .header__logo-space {
     float: left;
-    width: 140px;
+    width: 110px;
     height: 80px;
-    background: #fff;
+    //background: #fff;
 }
-  
+
+// nav, button space
+
+.header__nav-button-space {
+    float: left;
+    width: 1256px;
+}
+
 .header__nav-space {
-    margin-left: 140px;
+    margin-left: 110px;
     position: absolute;
     width: 100vw;
     height: 80px;
     z-index: 19;
-    background: #f00;
+    background: @dark;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5% 100%);
 }
 
 .header__nav {
