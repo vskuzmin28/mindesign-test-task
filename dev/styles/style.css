@@ -248,7 +248,7 @@ body *::selection {
   line-height: 34px;
 }
 .scroll-down {
-  right: 0;
+  right: -23px;
   height: 14px;
   transform: rotate(-90deg);
   position: absolute;
