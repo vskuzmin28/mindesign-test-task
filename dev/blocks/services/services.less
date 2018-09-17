@@ -178,14 +178,51 @@
 
 .services-items__column-hosp {
     position: absolute;
-    margin: 330px 0 0 -84px;
+    margin: 310px 0 0 -94px;
 }
 
 .services-items__column-mia {
     position: absolute;
-    margin: 536px 0 0 24px;
+    margin: 520px 0 0 16px;
 }
 
 .more {
     cursor: pointer;
+}
+
+// button close
+
+.btn-close {
+    top: 33px;
+    right: 33px;
+    position: absolute;
+    display: block;
+    width: 55px;
+    height: 30px;
+    color: @dark;
+
+    background: @dark;
+    -webkit-clip-path: polygon(1% 1%, 71% 0, 100% 100%, 30% 100%);
+    clip-path: polygon(1% 1%, 71% 0, 100% 100%, 30% 100%);
+    
+    &:hover {
+        background: @yellow;
+        color: @yellow;
+
+        .icon-plus:before {
+            color: @dark;
+        }
+    }
+
+    .icon-plus {
+        margin: 3px 0 0 18px;
+        transform: rotate(45deg);
+        width: 11px;
+        height: 11px;
+        
+        &:before {
+            color: @white;
+        }
+    }
+
 }

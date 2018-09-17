@@ -36,9 +36,15 @@ $('.main-slider__container').responsiveSlides({
   maxwidth: 1366,
 })
 
-$('.contentBig').hide();
+$('.contentBig, .btn-close').hide();
 
 $('.more').click(function(){
-  $('.contentSmall').hide();
-  $('.contentBig').show();
+  $('.contentSmall').hide('slow');
+  $('.contentBig, .btn-close').show('slow');
+})
+
+$('.btn-close').click(function(e){
+  e.preventDefault();
+  $('.contentBig, .btn-close').hide('slow');
+  $('.contentSmall').show('slow');
 })
