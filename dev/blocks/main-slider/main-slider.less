@@ -58,9 +58,12 @@
 .scroll-down {
     right: -23px;
     height: 14px;
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
     position: absolute;
 
+}
+
+.scroll-down__element {
     p {
         float: left;
         font: 14px 'Intro';
@@ -76,13 +79,12 @@
         height: 1px;
         background: @white;
     }
-
 }
 
 // scroll down container
 
 .scroll-down-container {
-    bottom: 0;
+    bottom: 0px;
     height: 90px;
     width: 100%;
     position: absolute;
@@ -90,6 +92,35 @@
     //background: #000;
 }
 
+// scroll down element animated
+
+.scroll-down_animated {
+	-webkit-animation: slide-left 0.5s steps(35, end) 20 alternate both;
+	        animation: slide-left 0.5s steps(35, end) 20 alternate both;
+}
+
+
+ @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-15px);
+              transform: translateX(-15px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-15px);
+              transform: translateX(-15px);
+    }
+  }
+  
 // main slider
 
 ul.rslides1_tabs {
