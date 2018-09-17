@@ -121,7 +121,7 @@ gulp.task('img', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('dev/img')); // Выгружаем в pub
+		.pipe(gulp.dest('pub/img')); // Выгружаем в pub
 })
 
 // optimize css
@@ -155,7 +155,10 @@ gulp.task('clean-pub', function () {
 gulp.task('build', ['clean-pub', 'pug', 'less'], function() {
 
     var buildFonts = gulp.src('dev/fonts/*.*')
-    .pipe(gulp.dest('pub'))
+    .pipe(gulp.dest('pub/fonts'))
+
+    var buildJS = gulp.src('dev/js/*.*')
+    .pipe(gulp.dest('pub/js'))
 
     var buildImg = gulp.src('dev/img/**/*.*')
     .pipe(gulp.dest('pub/img'))
