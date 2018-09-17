@@ -35,3 +35,10 @@ $('.main-slider__container').responsiveSlides({
   speed: 500,
   maxwidth: 1366,
 })
+
+$('.contentBig').hide();
+
+$('.more').click(function(){
+  $('.contentSmall').hide();
+  $('.contentBig').show();
+})

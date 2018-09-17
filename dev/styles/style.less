@@ -112,13 +112,17 @@ h2, p {
 
 // animation
 
-a, a:hover, .header__nav-button-space__promo:before, .header {
+a, a:hover, 
+.header__nav-button-space__promo:before, 
+.header,
+.services-items__column__item {
 	transition: all 0.5s ease-in-out !important;
 }
 
 // body
 
 body {
+  background: #E5E5E5;
 	cursor: default;
 	overflow-x: hidden !important;
 }
@@ -162,6 +166,36 @@ body *::selection {
   background: @yellow;
   color: @dark;
 }
+
+// title block
+
+.title-block {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  font: 56px 'Intro Black';
+  font-weight: bold;
+  font-style: italic;
+  color: @dark;
+  text-transform: uppercase;
+  background: url('../img/decoration.png') no-repeat left;
+}
+
+
+// descritipn block
+
+.description-block {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 754px;
+  font: 16px 'Graphik';
+  line-height: 30px;
+  color: @dark;
+}
+
 
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {
 

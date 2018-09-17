@@ -70,10 +70,12 @@ p {
 a,
 a:hover,
 .header__nav-button-space__promo:before,
-.header {
+.header,
+.services-items__column__item {
   transition: all 0.5s ease-in-out !important;
 }
 body {
+  background: #E5E5E5;
   cursor: default;
   overflow-x: hidden !important;
 }
@@ -101,6 +103,28 @@ body *::-webkit-selection {
 }
 body *::selection {
   background: #FFED00;
+  color: #2d2a26;
+}
+.title-block {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  font: 56px 'Intro Black';
+  font-weight: bold;
+  font-style: italic;
+  color: #2d2a26;
+  text-transform: uppercase;
+  background: url('../img/decoration.png') no-repeat left;
+}
+.description-block {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 754px;
+  font: 16px 'Graphik';
+  line-height: 30px;
   color: #2d2a26;
 }
 .header {
@@ -350,6 +374,150 @@ ul.rslides1_tabs .rslides_here a:hover {
   background: #FFED00;
   text-indent: -999999px;
   overflow: hidden;
+}
+.services {
+  padding-bottom: 60px;
+  height: auto;
+  background: #fff;
+  overflow: hidden;
+}
+.service-middle {
+  text-align: center !important;
+}
+.services-items {
+  width: 1060px;
+  padding: 0 20px;
+  list-style: none;
+  margin: 0 auto;
+  height: auto;
+}
+.services-items__column {
+  display: block;
+  float: left;
+  width: 342px;
+}
+.services-items__column__item {
+  margin-left: 0px;
+  width: 342px;
+  height: 192px;
+  background: #2d2a26;
+  margin-bottom: 20px;
+  -webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 30% 100%);
+  clip-path: polygon(0 0, 70% 0, 100% 100%, 30% 100%);
+  color: #fff;
+}
+.services-items__column__item_active {
+  background: #FFED00;
+  color: #2d2a26;
+}
+.services-items__column__item_active .services-items__content {
+  color: #2d2a26;
+}
+.services-items__column__item_active .services-items__content .icon:before {
+  color: #2d2a26 !important;
+}
+.services-items__column__item:hover {
+  background: #FFED00;
+  color: #2d2a26;
+}
+.services-items__column__item:hover .services-items__content {
+  color: #2d2a26;
+}
+.services-items__column__item:hover .services-items__content .icon:before {
+  color: #2d2a26 !important;
+}
+.services-items__content {
+  margin: 0px 0 0 0px;
+  width: 342px;
+  height: 192px;
+  overflow: hidden;
+}
+.services-items__content h4 {
+  position: absolute;
+  text-align: left;
+  margin: 20px 0 0 50px;
+  font: 16px 'Intro Black';
+  text-transform: uppercase;
+}
+.services-items__content h4 span {
+  padding-left: 20px;
+}
+.services-items__content p {
+  width: 170px;
+  margin: 0 0 0 114px;
+  text-align: left;
+  font: 11px 'Graphik';
+  line-height: 16px;
+}
+.services-items__content p span {
+  padding-left: 10px;
+}
+.services-items__content a,
+.services-items__content a:hover {
+  margin: 0px 0 0 104px;
+  display: block;
+  width: 200px;
+  height: 33px;
+  background: #2d2a26;
+  -webkit-clip-path: polygon(1% 1%, 91% 0, 100% 100%, 10% 100%);
+  clip-path: polygon(1% 1%, 91% 0, 100% 100%, 10% 100%);
+  font: 11px 'Intro';
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 33px;
+}
+.services-items__content a:hover,
+.services-items__content a:hover:hover {
+  text-decoration: underline;
+}
+.services-items__content .icon {
+  text-align: left !important;
+  margin: 64px 0 22px 150px;
+  font-size: 54.6px;
+}
+.services-items__content .icon-plus {
+  margin: 74px 0 0 130px;
+}
+.services-items__top {
+  margin-top: 96px;
+}
+.services-items__one {
+  margin-top: 96px;
+  margin-left: 130px;
+}
+.services-items__three {
+  margin-top: 96px;
+  margin-left: -30px;
+}
+.services-items__two {
+  margin-left: 110px;
+}
+.services-items__photo {
+  margin-left: 84px;
+}
+.services-items__sampling {
+  margin-left: 218px;
+}
+.services-items__festivals {
+  margin-left: 244px;
+}
+.services-items__popup {
+  margin-left: 354px;
+}
+.services-items__ontraid {
+  margin-left: 464px;
+}
+.services-items__column-hosp {
+  position: absolute;
+  margin: 330px 0 0 -84px;
+}
+.services-items__column-mia {
+  position: absolute;
+  margin: 536px 0 0 24px;
+}
+.more {
+  cursor: pointer;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
