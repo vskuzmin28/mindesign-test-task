@@ -112,8 +112,8 @@ h2, p {
 
 // animation
 
-a, a:hover {
-	transition: all 0.5s ease-in-out;
+a, a:hover, .header__nav-button-space__promo:before {
+	transition: all 0.5s ease-in-out !important;
 }
 
 // body
@@ -138,6 +138,29 @@ p {
   margin: 0 auto !important;
   width: 1366px !important;
   //background: #f00;
+}
+
+// buttons
+
+.button {
+  display: inline-block;
+}
+
+// selection
+
+body *::-moz-selection {
+  background: @yellow;
+  color: @dark;
+}
+
+body *::-webkit-selection {
+  background: @yellow;
+  color: @dark;
+}
+
+body *::selection {
+  background: @yellow;
+  color: @dark;
 }
 
 @media only screen and (min-width : @mobile) and  (max-width : @desktop) {

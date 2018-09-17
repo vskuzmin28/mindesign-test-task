@@ -68,8 +68,9 @@ p {
   color: #ffed00;
 }
 a,
-a:hover {
-  transition: all 0.5s ease-in-out;
+a:hover,
+.header__nav-button-space__promo:before {
+  transition: all 0.5s ease-in-out !important;
 }
 body {
   cursor: default;
@@ -85,6 +86,21 @@ p {
   position: relative;
   margin: 0 auto !important;
   width: 1366px !important;
+}
+.button {
+  display: inline-block;
+}
+body *::-moz-selection {
+  background: #FFED00;
+  color: #2d2a26;
+}
+body *::-webkit-selection {
+  background: #FFED00;
+  color: #2d2a26;
+}
+body *::selection {
+  background: #FFED00;
+  color: #2d2a26;
 }
 .header {
   position: absolute;
@@ -124,6 +140,8 @@ p {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5% 100%);
 }
 .header__nav {
+  float: right;
+  width: 800px;
   height: 80px;
 }
 .header__nav ul {
@@ -134,6 +152,8 @@ p {
 }
 .header__nav ul li a,
 .header__nav ul li a:hover {
+  padding: 0 47px 0 43px;
+  margin-right: -48px;
   display: block;
   float: left;
   height: 80px;
@@ -142,6 +162,48 @@ p {
   color: #fff;
   text-decoration: none;
   line-height: 80px;
+  -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 40% 100%);
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 40% 100%);
+}
+.header__nav ul li a:hover,
+.header__nav ul li a:hover:hover {
+  color: #FFED00;
+}
+.nav-active {
+  -webkit-clip-path: polygon(0 0, 60% 0, 100% 100%, 40% 100%);
+  clip-path: polygon(0 0, 60% 0, 100% 100%, 40% 100%);
+  color: #2d2a26 !important;
+  background: #FFED00;
+  font-weight: bold !important;
+}
+.header__nav-button-space__promo {
+  margin-top: 16px;
+  float: right;
+  width: 192px;
+  height: 46px;
+  background: #FFED00;
+  -webkit-clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+}
+.header__nav-button-space__promo:before {
+  position: absolute;
+  margin: 1px 1px 1px 1px;
+  display: block;
+  width: 190px;
+  height: 44px;
+  background: #2d2a26;
+  content: "Promo portal";
+  -webkit-clip-path: polygon(0.5% 0, 85% 0, 99.5% 100%, 15% 100%);
+  clip-path: polygon(0.5% 0, 85% 0, 99.5% 100%, 15% 100%);
+  font: 14px 'Intro';
+  color: #FFED00;
+  text-align: center;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+.header__nav-button-space__promo:hover:before {
+  color: #2d2a26;
+  background: #FFED00;
 }
 .main-slider {
   width: 100%;
